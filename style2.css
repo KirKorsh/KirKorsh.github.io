@@ -6,7 +6,8 @@ div{
 	height: 140px; 
 }
 header
-{	border-radius: 10px;
+{	
+	border-radius: 10px;
 	height: 145px;
 	background: url(https://phonoteka.org/uploads/posts/2021-04/1619526358_27-phonoteka_org-p-bezhevie-ottenki-fon-30.jpg);
 }
@@ -23,8 +24,27 @@ body
 { 
 	background: url(http://www.sloatgardens.com/wp-content/uploads/2017/07/succulent-soiree.jpg);
 }
+h2
+{
+	text-align: center;
+}
+table
+{
+    border: 1px ;
+	margin: auto;
+	
+}
+td 
+{
+	text-align: center; 
+}
+th 
+{
+	text-align: center; 
+}
 form
 {	
+	text-align: center;
 	font-size: 25px;
 	box-shadow: 0 0 5px 1px #AAAAAA;
 	border-radius: 10px;
@@ -46,9 +66,4 @@ footer
 {	border-radius: 10px;
 	height: 70px;
 	background: url(https://phonoteka.org/uploads/posts/2021-04/1619526358_27-phonoteka_org-p-bezhevie-ottenki-fon-30.jpg);
-}
-p
-{
-	font-size: 50px;
-	font-family :"LATHA";
 }
