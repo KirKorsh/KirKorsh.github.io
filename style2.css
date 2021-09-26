@@ -47,3 +47,8 @@ footer
 	height: 70px;
 	background: url(https://phonoteka.org/uploads/posts/2021-04/1619526358_27-phonoteka_org-p-bezhevie-ottenki-fon-30.jpg);
 }
+p
+{
+	font-size:7;
+	font-family :"LATHA";
+}
