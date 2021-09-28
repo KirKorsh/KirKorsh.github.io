@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset = "UTF-8" >
+	<title> САДОВОДtest </title>
+	<link rel="stylesheet" type="text/css" href="style3.css" >
+	<style>
+		#main-aside-wrapper {
+		  flex-direction: row;
+		  display: flex;
+		}
+		#main-aside-wrapper main, #main-aside-wrapper aside {
+		  background-color: #ddd;
+		  margin: 10px;
+		  padding: 10px;
+		}
+		#main-aside-wrapper aside {
+		  flex: 1;
+		  order: 1;
+		}
+		#main-aside-wrapper main {
+		  flex: 3;
+		  order: 2;
+		}
+   </style>
+</head>
+<body>	
+	<header >
+        <div>
+            <img alt="голова" style="float: left; padding: 10px 20px; width: 120px; height: 120px;"
+                src="https://static.wixstatic.com/media/cda177_25931338daf8467aa54fae49001fadd3.jpg/v1/fill/w_498,h_498,al_c,q_85,usm_0.66_1.00_0.01/cda177_25931338daf8467aa54fae49001fadd3.jpg">
+				<br>
+			<p id = "заголовок" style = "font-size:50px; font-family : LATHA; text-align:left"> Суккулентный SHOP </p>
+        </div>
+		</header>
+		<nav>
+			<h2>
+				<a style=" font-size:25px">Поиск по сайту</a> 
+			</h2>
+			<h3>
+                <a href="#point1">Полезная информация / </a>
+                <a href="#point2">Шоп-лист / </a>
+                <a href="#point3">Опрос </a>
+            </h3>
+		</nav>
+		<form id="point1" >
+			<ul >
+				<li><a  href="https://ru.wikipedia.org/wiki/Литопс"> Литопс и что это такое</a></li>
+				<li><a  href="https://www.youtube.com/watch?v=w5Eude3C7bs"> Интересно посмотреть</a></li>
+				<li><a  href="https://dionaea-cp.ru/wp-content/uploads/2019/12/saller-1140x641.jpg"> Другая интересность</a></li>
+			</ul>
+		</form>
+			<table   id="bl">
+				<tr><th style = "font-size: 25px" colspan="3" id="gr"> Ассортимент</th></tr>
+
+				<tr >
+					<th>Растение</th>
+					<th>Количество</th>
+					<th>Цена</th>
+				</tr>
+
+				<tr  >
+					<td>Adromischus mamillaris PVB 8981</td>
+					<td>3 детки.</td>
+					<td>220₽</td>
+				</tr>
+				<tr  >
+					<td>Aeonium 'Kiwi'</td>
+					<td>4 детки</td>
+					<td>180₽</td>
+				</tr>
+				<tr  >
+					<td>Haworthia truncata</td>
+					<td>1 взрослая</td>
+					<td>880₽</td>
+				</tr>
+				<tr  >
+					<td>Aloe 'Bright Star'</td>
+					<td>21 детка</td>
+					<td>190₽</td>
+				</tr>
+				<tr >
+					<td>Pleiospilos bolusii</td>
+					<td>3 взрослых</td>
+					<td>240₽</td>
+				</tr>
+			</table>
+
+    <form>
+		<div >
+			 <h1 id="point3">Анкета покупателя</h1>
+		</div>
+		<fieldset >
+			<legend> Контактная информация </legend>
+			
+			<p><label for="name">ФИО</label>
+			<input type="text" id="name" placeholder="Иванов Иван Иванович" required autofocus></p>
+			
+			<p><label for="phone">Телефон</label>
+			<input type="text" id="phone" placeholder="88005553535" required maxlength="11" ></p>
+			
+			<p><label for="email">Email</label>
+			<input type="email" id="email" placeholder="exemple@mail.com" required ></p>
+			
+		</fieldset>
+	</form>
+	<form>
+		<fieldset >
+			<legend>Персональная информация</legend>
+		
+			<p><label >Дата рождения:</label>
+		<input type="date" id="date"  required ></p>
+		
+			<p><label >Любимое семейство:</label>
+			<select>
+		
+				<option value="">Асфоделовые</option>
+				<option value="">Аизовые</option>
+				<option value="">Толстянковые</option>
+		
+			</select></p>
+		
+			<p> <label >Хотите ли вы видеть больший ассортимент,если да, то какой?<br></label> 
+			<textarea cols="30" rows="3"> </textarea>
+			</p>
+		
+		</fieldset>
+	</form>
+	<form>
+		<fieldset>
+			<legend>Оценка нашего заведения</legend>
+			<p>	Порекомендуете ли вы магазин друзьям?</p>
+			<p>
+				<label>	Да	</label>
+				<input type="radio" name="otvet">
+			</p>
+			<p>
+				<label>Нет</label>
+				<input type="radio" name="otvet">
+			</p>
+		</fieldset>
+	</form>
+	<p >
+		<input type="submit" value="Отправить" style="width:200px; height:50px ;font-size: 25px;">
+	</p>
+	
+	<footer >
+	<div style = "	border-radius: 10px; border-width: 3px; border-style: outset; border-color: #FFDD00; height: 65px;}">
+		<h4 style="margin-left: 25px;text-align:left">
+			(с) Коршиков Кирилл 2021
+		</h4>
+	</div>
+	</footer>
+	</body>
+</html>
