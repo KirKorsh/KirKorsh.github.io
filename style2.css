@@ -1,10 +1,20 @@
 div{
 	text-align: center;
 	border-radius: 10px;
-    border-width: 3px; /* Задаем толщину рамки */
-    border-style: outset; /* Задаем стиль рамки */
-    border-color: #FFDD00; /* Задаем цвет рамки */
+    border-width: 3px;
+    border-style: outset; 
+    border-color: #FFDD00; 
 	height: 140px; 
+}
+form
+{	
+	text-align: center;
+	font-size: 25px;
+	box-shadow: 0 0 5px 1px #AAAAAA;
+	border-radius: 10px;
+	background:  #b2fba5;
+    width: 480px;
+    margin: 30px auto;
 }
 header
 {	
@@ -50,23 +60,30 @@ th
 	padding: 5px;
 	text-align: center; 
 }
-form
-{	
+
+
+#point1
+{
+	align-content: center;
+	justify-content: space-around;
+	width: 960px;
+	height: auto; 
 	text-align: center;
+	border-radius: 10px;
+    border-style: none;  
 	font-size: 25px;
 	box-shadow: 0 0 5px 1px #AAAAAA;
 	border-radius: 10px;
 	background:  #b2fba5;
-    width: 480px;
     margin: 30px auto;
 }
 
-#gr
+.gr
 {
     background-color: #b2fba5;
 }
 
-#bl
+.bl
 {
     background-color: #E0FFFF;
 }
