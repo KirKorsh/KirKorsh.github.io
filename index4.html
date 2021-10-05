@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset = "UTF-8" >
+	<title> САДОВОДtest </title>
+	<link rel="stylesheet" type="text/css" href="style3.css" >
+	<script>
+		function agreeForm(f) 
+		{
+			if (f.agree.checked) f.submit.disabled = 0 
+			else f.submit.disabled = 1
+		}
+	</script>
+</head>	
+<body>
+	<header >
+		<div class = "head-pic" >
+			<img id = "logo" alt=""  src="https://static.wixstatic.com/media/cda177_25931338daf8467aa54fae49001fadd3.jpg/v1/fill/w_498,h_498,al_c,q_85,usm_0.66_1.00_0.01/cda177_25931338daf8467aa54fae49001fadd3.jpg"> 
+		</div>
+		<div class = "zag">
+		<a  > Суккулентный SHOP </a>
+		</div>
+		
+	</header>
+	<div id = "menu">
+		<nav>
+			<a href="#point1">•Полезная информация </a>
+			<a href="#point2">•Шоп-лист </a>
+			<a href="#point3">•Опрос </a>
+		</nav>
+	</div>
+	<div id="content">
+		<div id ="point1" class = "select1" >
+			<span>
+				<a	href="https://ru.wikipedia.org/wiki/Литопс">Литопс и что это такое</a>
+				<a  href="https://www.youtube.com/watch?v=w5Eude3C7bs">Интересно посмотреть</a>
+				<a	href="https://dionaea-cp.ru/wp-content/uploads/2019/12/saller-1140x641.jpg">Другая интересность</a>
+			</span>
+		</div>
+		<div id="point2" class = "select2">
+			<table>
+				<tr>
+					<th style = "font-size: 25px" colspan="3"  class="bl"> Ассортимент</th>
+				</tr>
+				<tr class ="gr" >
+					<th>Растение</th>
+					<th>Количество</th>
+					<th>Цена</th>
+				</tr>
+				<tr class="bl" >
+					<td>Adromischus mamillaris PVB 8981</td>
+					<td>3 детки.</td>
+					<td>220₽</td>
+				</tr>
+				<tr class ="gr" >
+					<td>Aeonium 'Kiwi'</td>
+					<td>4 детки</td>
+					<td>180₽</td>
+				</tr>
+				<tr class="bl"  >
+					<td>Haworthia truncata</td>
+					<td>1 взрослая</td>
+					<td>880₽</td>
+				</tr>
+				<tr class ="gr"  >
+					<td rowspan = "2" >Aloe 'Bright Star'</td>
+					<td>21 детка</td>
+					<td>190₽</td>
+				</tr>
+				<tr class ="bl"  >
+					<td >3 взрослых</td>
+					<td>240₽</td>
+				</tr>
+			</table>
+		</div>
+		<div class = "select3">	
+			<form style = "weight: 100%">
+				<div >
+					 <h1 id="point3">Анкета покупателя</h1>
+				</div>
+				<fieldset >
+					<legend> Контактная информация </legend>
+					
+					<p><label for="name">ФИО</label>
+					<input type="text" id="name" placeholder="Иванов Иван Иванович" required autofocus></p>
+					
+					<p><label for="phone">Телефон</label>
+					<input type="text" id="phone" placeholder="88005553535" required maxlength="11" ></p>
+					
+					<p><label for="email">Email</label>
+					<input type="email" id="email" placeholder="exemple@mail.com" required ></p>
+					
+				</fieldset>
+			</form>
+			<form>
+				<fieldset >
+					<legend>Персональная информация</legend>
+					<p>
+						<label >Дата рождения:</label>
+						<input type="date" id="date"  required >
+					</p>
+				
+					<p>
+						<label >Любимое семейство:</label>
+						<select name="field-name-2[]" multiple="multiple" >
+							<option value="">Асфоделовые</option>
+							<option value="">Аизовые</option>
+							<option value="">Толстянковые</option>
+						</select>
+					</p>			
+					<p> 
+						<label >Хотите ли вы видеть больший ассортимент,если да, то какой?<br></label> 
+						<textarea cols="30" rows="3"> </textarea>
+					</p>
+				</fieldset>
+			</form>
+			<form>
+				<fieldset>
+					<legend>Оценка нашего заведения</legend>
+					<p>	Порекомендуете ли вы магазин друзьям?</p>
+					<p>
+						<label>	Да	</label>
+						<input type="radio" name="otvet">
+					</p>
+					<p>
+						<label>Нет</label>
+						<input type="radio" name="otvet">
+					</p>
+				</fieldset>
+				<label> <br /> <input type="checkbox" name="check-1" /> Разрешение на использование личной информации дал(а) </label> <br />
+			</form>
+			
+			<p><input type="submit" value="Отправить" style="width:200px; height:50px ;font-size: 25px;"></p>
+		</div>
+	</div>
+	<footer >
+		<div>
+			<h4>
+				(с) Коршиков Кирилл 2021
+			</h4>
+		</div>
+	</footer>
+	</body>
+</html>
