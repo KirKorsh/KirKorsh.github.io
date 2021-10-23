@@ -1,3 +1,4 @@
+
 header
 {	
 	display: flex; 
@@ -5,7 +6,7 @@ header
     background: #FFFFFF;
     height: 170px;
 	justify-content: space-between;
-
+	margin-bottom: 30px;
 }
 
 header div.zag 
@@ -29,12 +30,6 @@ header div.head-pic img
 	height: 150px;
 }
 
-
-div
-{
-	border-radius: 10px;
-}
-
 form
 {	
 	text-align: center;
@@ -50,12 +45,12 @@ nav
 {	
 	font-size: 20px;
 	background: #b2fba5;
-	border-radius: 10px;
-	box-shadow: 0 0 5px 1px #AAAAAA;
+	box-shadow: 0 0 1px 1px #AAAAAA;
 	justify-content: space-between;
-
-
+	padding-top: 10px;
+    padding-bottom: 10px;
 }
+
 body
 { 
 	background: url(http://www.sloatgardens.com/wp-content/uploads/2017/07/succulent-soiree.jpg);
@@ -68,11 +63,13 @@ table
 	margin: auto;
 	
 }
+
 td 
 {
 	padding: 5px;
 	text-align: center; 
 }
+
 th 
 {
 	padding: 5px;
@@ -81,7 +78,6 @@ th
 
 .select1
 {
-    padding: 10px;
     order: 1;
 }
 
@@ -91,17 +87,7 @@ th
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    order: 2;
-}
 
-.select3
-{
-    padding: 10px;
-    margin-top: 30px;
-    display: flex;
-    order: 3;
-    flex-direction: column;
-    text-align: center;
 }
 
 .select2 table
@@ -141,51 +127,75 @@ th
     background-color: #b2fba5;
 }
 
-#point1
-{	
-	height: auto; 
-    width: 100%;
-    border-style: none;  
-	font-size: 20px;
-	box-shadow: 0 0 5px 1px #AAAAAA;
-	border-radius: 10px;
-	background:  #b2fba5;
-
+.select3
+{
+    padding: 10px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
-	text-align: center;
+    text-align: center;
+}
 
+#point1
+{	
+	font-size: 20px;
+	border-radius: 10px;
+	background:  #b2fba5;
+    display: flex;
+    
+	
 }
 
 #point1 nav
 {
+	text-align: center;
+	width: 100%;
     flex: 1;
     order: 1;
-    display: flex;
-    flex-direction: column;
     align-items:flex-start;
-
-
+	display: flex;
 }
+
+
+#menu
+{	
+	flex-direction: column;
+}
+ 
+#menu nav
+{
+	width: 100%;
+	flex: 1;
+	order: 1;
+	display: flex;
+	align-items:flex-start;
+	text-align: center;
+}
+ 
+#menu nav a
+{
+    text-decoration: none;
+}
+
+
 .bl
 {
     background-color: #E0FFFF;
 }
 footer
 {		
-		
-		border-radius: 10px;
-		border-width: 3px;
-		border-style: outset;
-		border-color: #FFDD00; 
-		height: 65px;
+	border-radius: 10px;
+	border-width: 3px;
+	border-style: outset;
+	border-color: #FFDD00; 
+	height: 65px;
 	background: url(https://phonoteka.org/uploads/posts/2021-04/1619526358_27-phonoteka_org-p-bezhevie-ottenki-fon-30.jpg);
 }
 footer h4
 {
 	margin-left: 25px;
-		text-align:left;
-		}
+	text-align:left;
+}
 
 
 #content
@@ -195,32 +205,6 @@ footer h4
 	display: flex; 
 	flex-direction: column; 
 	margin-top: 35px;
-	margin-left:20px;
-
-}
-
-#menu
-{	
-	
-    margin-top: 35px;
-	flex-direction: row;
-}
-	   
-#menu nav
-{
-	width: 100%;
-	flex: 1;
-	order: 1;
-	display: flex;
-	align-items:flex-start;
-	padding: 10px;
-	margin: 10px;
-
-}
- 
-#menu nav a
-{
-    text-decoration: none;
 }
 
 
@@ -228,35 +212,19 @@ footer h4
 {
 	#menu
 	{	
-		max-width: 960px;
 		margin:auto; 
-		margin-top: 35px;
 		display: flex;
-		flex-direction: column;
 	}
 
 	#menu nav
 	{
 		justify-content: space-around;
 		flex-direction: column;
-
 	}
 
 	#content
 	{
-		max-width: 960px;
 		margin:auto;
 		margin-top: 35px;
-		margin-left:10px;
-	}
-
-	.select2
-	{
-		order: 3;
-	}
-
-	.select3
-	{
-		order: 2;
 	}
 }
