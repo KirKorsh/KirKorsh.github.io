@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<script src="calc6.js"></script>
+		<title> calc6 </title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	</head>
+	<body >  
+		<div align="center">
+		<h1>Рассчитать стоимость заказа</h1>
+	
+		<form>
+			<label >Любимое семейство:</label>
+			<select  name="prodType"> >
+				<option value="1">Асфоделовые</option>
+				<option value="2">Аизовые</option>
+				<option value="3">Толстянковые</option>
+			</select>
+			
+			<div id="radios">
+				<label><input type="radio" name="prodOptions" value="option1">Семена</label>
+				<label><input type="radio" name="prodOptions" value="option2"  checked="checked">Растения</label>
+			</div>
+			
+			<div id="checkboxes"> Какая разновидность?<br>
+
+				<label><input type="checkbox" name="prodM">Травянистый</label>
+				<label><input type="checkbox" name="prodM2">Древовидный</label>
+				<label><input type="checkbox" name="prodM3">Кустарниковый</label>
+			</div>
+			
+			<div>Количество:<br></div>
+			<input id="input" type="number" min="0" max="100" step="1" value="0">
+			<br>
+			Оплатить:
+			<button id="button1" ">OK</button>
+			<div id="prodPrice"></div>
+			
+		</form>
+	</body>
+</html>
