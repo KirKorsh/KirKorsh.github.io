@@ -19,6 +19,7 @@ function countPrice(sky)
     } 
     else 
     {
+        total.value = "";
         alert("Допущена ошибка при вводе данных!");
     }
 }
